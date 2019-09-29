@@ -1,0 +1,215 @@
+div {
+  border: 1px;
+  position: absolute;
+  border-style: solid;
+  float: left;
+  padding: 1%;
+  box-sizing: border-box;
+  margin: 3%;
+  vertical-align: middle;
+}
+
+p{
+  text-align: left;
+}
+
+
+/*CSS responsive for Mobiles in general*/
+@media only screen and (min-width: 360px) {
+    [class*="mobile-"]{
+      order: 1;
+      top: 2%;
+      background-color: lightskyblue;
+      margin-left: 2%;
+      font-size: 10px;
+      left: 5%;
+      width: 90%;
+    }
+
+    .mobile-h {
+      order: 1;
+      text-align: center;
+      top: 2%;     
+    }
+
+    .mobile-l{
+      order: 2;
+      text-align: center;
+      top: 10%;
+      font-size: 10px;
+    }
+
+    .mobile-c-1 {
+      order: 3;
+      text-align: center;
+      top: 30%;
+    }
+
+    .mobile-c-2 {
+      order: 4;
+      text-align: center;
+      top: 50%;
+    }
+
+    .mobile-c-3 {
+      order: 5;
+      text-align: center;
+      top: 71%;
+    }
+
+    .mobile-l a{
+      color: black;
+      text-align: left;
+    }
+}
+
+
+/*CSS responsive for Tablets in General*/
+@media only screen and (min-width: 768px) {
+    [class*="tablets-"]   {
+      background-color: forestgreen;
+      margin-left: 8%;
+      font-size: 16px;
+    }
+    
+    .tablets-h {
+      order: 1;
+      text-align: center;
+      width: 56%;
+      top: 5%;     
+    }
+
+    .tablets-l{
+      order: 2;
+      width: 56%;
+      top: 18%; 
+      text-align: center;
+      font-size: 11px;
+    }
+
+    .tablets-c-1 {
+      order: 3;
+      top: 45%;
+      left: 5%;
+      width: 15%;
+      height: 50%;
+      font-size: 12px;
+    }
+
+    .tablets-c-2 {
+      order: 4;
+      top: 45%;
+      left: 25%;
+      width: 15%;
+      height: 50%;
+      font-size: 12px;
+    }
+
+    .tablets-c-3 {
+      order: 5;
+      top: 45%;
+      left: 45%;
+      width: 16.5%;
+      height: 50%;
+      font-size: 12px;
+    }
+    
+    .tablets-l a{
+      color: black;
+      text-align: left;
+    }
+    
+
+}
+
+
+/*CSS responsive for Laptops and Desktops*/
+@media only screen and (min-width: 1200px) {
+    [class*="desktop-"]   {
+      background-color: gold;
+      margin-left: 8%;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    
+    .desktop-h {
+      order: 1;
+      text-align: center;
+      width: 55%;
+      top: 5%;
+      left: 5%;
+    }
+
+    .desktop-l{
+      order: 2;
+      top: 5%;
+      left: 65%;
+      height: 65%;
+      width: 10%;
+      writing-mode: vertical-rl;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .desktop-c-1 {
+      order: 3;
+      top: 30%;
+      width: 15%;
+      height: 38%;
+      left: 5%;
+    }
+
+    .desktop-c-2 {
+      order: 4;
+      top: 30%;
+      left: 25%;
+      width: 15%;
+      height: 38%;
+    }
+
+    .desktop-c-3 {
+      order: 5;
+      top: 30%;
+      left: 45%;
+      width: 15%;
+      height: 38%;
+    }
+
+    .desktop-l a{
+      color: black;
+      text-align: left;
+    }
+}
+
+
+/*
+
+[class*="col-"] {
+
+    font-size: 1em;
+    width: 94%;
+    background-color: lightcoral;
+}
+
+@media only screen and (min-width: 600px) {
+    [class*="col-t-"]   {
+
+        font-size: 1.5em;
+        width: 44%;
+        background-color: orange;
+    }
+
+    .col-d-3    {
+        width: 94%;
+    }
+
+}
+
+
+
+<div class="desktop-h mobile-h tablets-h">Header</div>
+<div class="desktop-c-1 mobile-c-1 tablets-c-1">Cat 1</div>
+<div class="desktop-c-2 mobile-c-2 tablets-c-2">Cat 2</div>
+<div class="desktop-c-3 mobile-c-3 tablets-c-3">Cat 3</div>
+<div class="desktop-l mobile-l tablets-l">Navigation Links</div>
+*/
